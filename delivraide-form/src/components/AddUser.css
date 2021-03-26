@@ -1,0 +1,11 @@
+:root {
+    --main-font: 'Fredoka One', cursive;
+    --main-font-color: white;
+} 
+
+
+.form-add-user-hero-title {
+    color: var(--main-font-color);
+    font-family: var(--main-font);
+    font-size: 3vw;
+}
