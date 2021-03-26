@@ -32,16 +32,6 @@ function CreateUser() {
                             <label>Tél. :</label>
                             <input type="tel" name="phone-number" required></input>
                         </div>
-                        <div className="form-account-connexion">
-                            <div className="form-email">
-                                <label>E-mail :</label>
-                                <input type="email" name="email" required></input>
-                            </div>
-                            <div className="form-password">
-                                <label>Mot de passe :</label>
-                                <input type="password" name="password" required></input>
-                            </div>
-                        </div>
                         <button type="submit" className="form-submit">Valider</button>
                     </form>
                 </div>
