@@ -10,24 +10,28 @@ import Login from './Login'
 import CreateUser from './CreateUser'
 import UserList from './UserList'
 import AddUser from './AddUser'
+import AddDelivery from './AddDelivery'
 
 function App() {
     return (
         <Router>
             <div>
-                <nav>
+                <nav className="navbar">
                     <ul>
                         <li>
                             <Link to="/login">Login</Link>
                         </li>
                         <li>
-                            <Link to="/createuser">create user</Link>
+                            <Link to="/createuser">Create user</Link>
                         </li>
                         <li>
-                            <Link to="/userlist">user list</Link>
+                            <Link to="/userlist">User list</Link>
                         </li>
                         <li>
                             <Link to="/adduser">Add user</Link>
+                        </li>
+                        <li>
+                            <Link to="/adddelivery">Add Delivery</Link>
                         </li>
                     </ul>
                 </nav>
@@ -43,6 +47,9 @@ function App() {
                     </Route>
                     <Route path="/adduser">
                         <AddUser />
+                    </Route>
+                    <Route path="/adddelivery">
+                        <AddDelivery />
                     </Route>
                 </Switch>
             </div>
