@@ -9,7 +9,7 @@ function User(props) {
                 <p className="user-list first-name">{firstName}</p>
                 <p className="user-list last-name">{lastName}</p>
                 <p className="user-list uid">{UID}</p>
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true"></i>
             </div>
         </>
     )

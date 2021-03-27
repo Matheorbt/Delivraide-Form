@@ -3,9 +3,14 @@
     --main-font-color: white;
 } 
 
-
 .form-add-user-hero-title {
     color: var(--main-font-color);
     font-family: var(--main-font);
     font-size: 3vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .form-add-user-hero-title {
+        font-size: 7vw;
+    }
 }

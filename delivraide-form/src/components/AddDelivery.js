@@ -58,7 +58,7 @@ function AddDelivery() {
                         <input type="text" name="adress" required></input>
                     </div>
                     <p className="form-add-delivery-hero-title">Informations complémentaires</p>
-                    <textarea maxlength="300" className="form-complementary-info" cols="50" swrap="hard" pellcheck="true"></textarea>
+                    <textarea maxLength="300" className="form-complementary-info" cols="50" swrap="hard" pellcheck="true"></textarea>
                     <button type="submit" className="form-submit">Valider</button>
                 </form>
             </div>

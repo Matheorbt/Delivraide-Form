@@ -32,3 +32,18 @@
     flex-direction: column;
     gap: 25px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .form-when-wrapper {
+        flex-direction: column;
+    }
+    .form-add-delivery-hero-title {
+        font-size: 7vw;
+        text-align: center;
+    }
+    .form-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

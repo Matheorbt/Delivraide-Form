@@ -115,3 +115,18 @@
     color: black;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1000px) {
+    .form-wrapper label {
+        font-size: 7vw;
+    }
+    .form-wrapper input:not(.form-submit) {
+        font-size: 6vw;
+    }
+    .form-wrapper button {
+        font-size: 7vw;
+    }
+    .form-admin-connexion {
+        font-size: 7vw;
+    }
+}

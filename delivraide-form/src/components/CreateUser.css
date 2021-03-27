@@ -105,3 +105,18 @@ body {
 .form-complementary-info:focus {
     outline: none;
 }
+
+@media only screen and (max-width: 1000px) {
+    .form-add-user-hero-title {
+        font-size: 8vw;
+    }
+    .form-firstname-lastname {
+        flex-direction: column;
+    }
+    .form-city-info {
+        flex-direction: column;
+    }
+    .form-account-connexion {
+        flex-direction: column;
+    }
+}
