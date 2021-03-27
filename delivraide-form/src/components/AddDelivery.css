@@ -11,7 +11,7 @@
 
 .form-when-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     gap: 40px;
@@ -19,7 +19,7 @@
 
 .form-when {
     display: flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 25px;
@@ -27,10 +27,32 @@
 
 .form-when-hour {
     display: flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+}
+
+.form-city-name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-city-name select {
+    font-family: var(--main-font);
+    outline: none;
+    font-size: 2vw;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.form-city-name select option {
+    font-family: var(--main-font);
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 2vw;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -45,5 +67,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .form-city-name select {
+        font-size: 7vw;
+    }
+    .form-city-name select option {
+        font-size: 5vw;
     }
 }

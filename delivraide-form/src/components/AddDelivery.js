@@ -16,22 +16,39 @@ function AddDelivery() {
                             <label>A quelle heure ?</label>
                             <input type="time" name="password" required></input>
                         </div>
+                        <div className="form-city-name">
+                            <label>Ville ?</label>
+                            <select className="form-city-selector" name="city">
+                                <option value="Lyon">Lyon</option>
+                                <option value="Montpellier">Montreuil</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Vélizy-Villacoublay">Vélizy-Villacoublay</option>
+                                <option value="Viroflay">Viroflay</option>
+                            </select>
+                        </div>
                     </div>
                     <p className="form-add-delivery-hero-title">Où récupérer la commande (donateur)</p>
                     <div className="form-city-info">
+                        <div className="form-first-name">
+                            <label>Enseigne :</label>
+                            <input type="name" name="name" required></input>
+                        </div>
+                        <div className="form-number">
+                            <label>Tél. :</label>
+                            <input type="tel" name="tel" required></input>
+                        </div>
+                    </div>
+                    <div className="form-city-info">
                         <div className="form-city-name">
-                            <label>Ville :</label>
-                            <input type="text" name="ville" required></input>
+                            <label>Adresse :</label>
+                            <input type="text" name="adress" required></input>
                         </div>
                         <div className="form-zip-code">
                             <label>Code postal :</label>
                             <input type="number" name="code_postal" required></input>
                         </div>
                     </div>
-                    <div className="form-number">
-                        <label>Tél. :</label>
-                        <input type="tel" name="tel" required></input>
-                    </div>
+
                     <p className="form-add-delivery-hero-title">Où livrer la commande (livreur)</p>
                     <div className="form-firstname-lastname">
                         <div className="form-last-name">
@@ -44,18 +61,19 @@ function AddDelivery() {
                         </div>
                     </div>
                     <div className="form-city-info">
-                        <div className="form-city-name">
-                            <label>Ville :</label>
-                            <input type="text" name="ville" required></input>
+                        <div className="form-city-adress">
+                            <label>Adresse :</label>
+                            <input type="text" name="adress" required></input>
                         </div>
                         <div className="form-zip-code">
                             <label>Code postal :</label>
                             <input type="number" name="code_postal" required></input>
                         </div>
                     </div>
-                    <div className="form-city-adress">
-                        <label>Adresse :</label>
-                        <input type="text" name="adress" required></input>
+
+                    <div className="form-number">
+                        <label>Tél. :</label>
+                        <input type="tel" name="tel" required></input>
                     </div>
                     <p className="form-add-delivery-hero-title">Informations complémentaires</p>
                     <textarea maxLength="300" className="form-complementary-info" cols="50" swrap="hard" pellcheck="true"></textarea>
