@@ -74,4 +74,9 @@
     .form-city-name select option {
         font-size: 5vw;
     }
+    .form-complementary-info {
+        font-size: 8vw;
+        width: 80%;
+        height: 300px;
+    }
 }

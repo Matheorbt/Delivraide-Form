@@ -11,6 +11,7 @@ import CreateUser from './CreateUser'
 import UserList from './UserList'
 import AddUser from './AddUser'
 import AddDelivery from './AddDelivery'
+import Addnews from './Addnews'
 
 function App() {
     return (
@@ -33,6 +34,9 @@ function App() {
                         <li>
                             <Link to="/adddelivery">Add Delivery</Link>
                         </li>
+                        <li>
+                            <Link to="/addnews">Add News</Link>
+                        </li>
                     </ul>
                 </nav>
                 <Switch>
@@ -50,6 +54,9 @@ function App() {
                     </Route>
                     <Route path="/adddelivery">
                         <AddDelivery />
+                    </Route>
+                    <Route path="/addnews">
+                        <Addnews />
                     </Route>
                 </Switch>
             </div>
