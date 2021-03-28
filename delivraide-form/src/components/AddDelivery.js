@@ -20,10 +20,11 @@ function AddDelivery() {
                             <label>Ville ?</label>
                             <select className="form-city-selector" name="city">
                                 <option value="Lyon">Lyon</option>
-                                <option value="Montpellier">Montreuil</option>
+                                <option value="Montreuil">Montreuil</option>
                                 <option value="Paris">Paris</option>
                                 <option value="Vélizy-Villacoublay">Vélizy-Villacoublay</option>
                                 <option value="Viroflay">Viroflay</option>
+                                <option value="Montpellier">Montpellier</option>
                             </select>
                         </div>
                     </div>
