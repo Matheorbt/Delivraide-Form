@@ -2,10 +2,12 @@
     --main-font: 'Fredoka One', cursive;
     --main-font-color: white;
 }
-body {
+
+.main-wrapper-flex {
     display: flex;
     justify-content: center;
     align-self: center;
+    margin-top: 10vh;
 }
 
 .main-wrapper-create-user {
