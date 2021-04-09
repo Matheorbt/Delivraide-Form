@@ -18,12 +18,16 @@ import Application from './Application'
 import Home from './Home'
 
 function App() {
-    const displayNavbar = () => {
-        const navbarButton = document.querySelector(".navbar-button")
+    const handleNavbar = () => {
         const navbarItems = document.querySelector(".admin-navbar-items")
-
         navbarItems.classList.toggle('active-navbar');
     }
+    const displayNavbar = () => {
+        const navbarItemsEach = document.querySelectorAll(".admin-navbar-items")
+
+        navbarItemsEach.forEach(link => link.addEventListener('click', handleNavbar()));
+    }
+
     return (
         <Router>
             <nav className="admin-navbar">
