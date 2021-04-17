@@ -39,6 +39,7 @@ function AddKit() {
                                     <input type="email" name="email" required></input>
                                 </div>
                             </div>
+                            <div class="politique-div"><input type="checkbox" id="confidentialité" name="confidentialité" required /><label for="confidentialité">J'accepte que ces informations soient <a href="/charte">enregistrées et traitées</a> par l'asssociation l'Equipage Solidaire conformément à sa <a href="/politique">politique de confidentialité</a>.</label></div>
                             <button type="submit" className="form-submit">Valider</button>
                         </form>
                     </div>

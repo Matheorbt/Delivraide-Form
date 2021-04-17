@@ -17,6 +17,8 @@ import Dashboard from './Dashboard'
 import Application from './Application'
 import Home from './Home'
 import AddKit from './AddKit'
+import Charte from './Charte'
+import Politique from './Politique'
 
 function App() {
     const handleNavbar = () => {
@@ -34,7 +36,7 @@ function App() {
             <nav className="admin-navbar">
                 <img src={logoAdmin} alt="logo admin"></img>
                 <button className="navbar-button set-active" onClick={() => displayNavbar()}><i class="fa fa-bars" aria-hidden="true"></i></button>
-                <ul className="admin-navbar-items active-navbar">
+                <ul className="admin-navbar-items">
                     <button className="navbar-button set-unactive" onClick={() => displayNavbar()}><i class="fa fa-times" aria-hidden="true"></i></button>
                     <li>
                         <Link to="/home">Accueil</Link>
@@ -98,6 +100,12 @@ function App() {
                 </Route>
                 <Route path="/application">
                     <Application />
+                </Route>
+                <Route path="/charte">
+                    <Charte />
+                </Route>
+                <Route path="/politique">
+                    <Politique />
                 </Route>
             </Switch>
         </Router>
