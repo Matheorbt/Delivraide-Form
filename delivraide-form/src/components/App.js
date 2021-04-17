@@ -16,6 +16,7 @@ import logoAdmin from '../props/img/logo.png'
 import Dashboard from './Dashboard'
 import Application from './Application'
 import Home from './Home'
+import AddKit from './AddKit'
 
 function App() {
     const handleNavbar = () => {
@@ -37,6 +38,9 @@ function App() {
                     <button className="navbar-button set-unactive" onClick={() => displayNavbar()}><i class="fa fa-times" aria-hidden="true"></i></button>
                     <li>
                         <Link to="/home">Accueil</Link>
+                    </li>
+                    <li>
+                        <Link to="/addkit">Add kit</Link>
                     </li>
                     <li>
                         <Link to="/login">Connexion</Link>
@@ -70,6 +74,9 @@ function App() {
                 </Route>
                 <Route path="/login">
                     <Login />
+                </Route>
+                <Route path="/addkit">
+                    <AddKit />
                 </Route>
                 <Route path="/createuser">
                     <CreateUser />
